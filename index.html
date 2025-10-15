@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Raturi | Cyberpunk Terminal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="matrix-rain" id="matrix-canvas"></div>
+  <div class="status-hud">
+    <div class="hud-item">
+      <span>SYSTEM</span>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 87%;"></div>
+      </div>
+    </div>
+    <div class="hud-item">
+      <span>SECURITY</span>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 92%;"></div>
+      </div>
+    </div>
+    <div class="hud-item">
+      <span>NETWORK</span>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 78%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="status-indicators">
+      <div class="status-item">
+        <div class="status-dot"></div>
+        <div class="status-text">SYSTEM ACTIVE</div>
+      </div>
+      <div class="status-item">
+        <div class="status-dot"></div>
+        <div class="status-text">NETWORK SECURE</div>
+      </div>
+    </div>
+
+    <div class="system-info">
+      <div>// SYSTEM: Alunex v2.077 //</div>
+      <div>// CONNECTION: ENCRYPTED //</div>
+      <div>// USER: AUTHORIZED //</div>
+    </div>
+
+    <header>
+      <h1 class="typing"><span class="glitch-text" data-text="Welcome to Shubham Raturi's Terminal">Welcome to Shubham Raturi's Terminal</span></h1>
+      <div class="command-history">
+        <div class="command">
+          <div class="command-input terminal-line">whoami</div>
+          <div class="command-output"><span class="highlight-text">Shubham Raturi</span> - <span class="highlight-text">Student</span> | <span class="highlight-text">Cybersecurity Specialist</span></div>
+        </div>
+        <div class="command">
+          <div class="command-input terminal-line">pwd</div>
+          <div class="command-output">/home/shubham</div>
+        </div>
+        <div class="command">
+          <div class="command-input terminal-line">ls -la</div>
+          <div class="command-output">
+            <div class="data-block">
+              drwxr-xr-x   4 shubham shubham   4096 Apr 23 12:34 .<br>
+              drwxr-xr-x   2 shubham shubham   4096 Apr 23 12:34 ..<br>
+              -rw-r--r--   1 shubham shubham    217 Apr 23 12:34 about.txt<br>
+              -rw-r--r--   1 shubham shubham   1024 Apr 23 12:34 projects.json<br>
+              -rw-r--r--   1 shubham shubham    512 Apr 23 12:34 contact.md<br>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#certifications">CERTS</a>
+        <a href="#education">EDUCATION</a>
+        <a href="#tryhackme">TRYHACKME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <section id="home" class="section fade-in">
+      <h2 class="terminal-line">~/home</h2>
+      <p><span class="highlight-text">Hello!</span> I'm Shubham Raturi, a Cybersecurity specialist passionate about building secure network infrastructures and privacy-focused solutions in this hyper-connected world.</p>
+      <p>Currently pursuing B.Tech in Cybersecurity, I specialize in <span class="highlight-text">network security, system infiltration, and secure communications</span> - essential skills in a world where data is the new currency.</p>
+      <p>Type '<span class="highlight-text">help</span>' or navigate using the menu above to access my digital footprint.</p>
+    </section>
+
+    <section id="projects" class="section fade-in">
+      <h2 class="terminal-line">~/projects</h2>
+      <div class="projects" id="projects-container">
+        <!-- Advanced Home Network Lab -->
+        <div class="project-card">
+          <h3 class="project-title">Advanced Home Network Lab</h3>
+          <p class="project-description">A comprehensive home lab environment with enterprise-grade network security and segmentation using OPNsense and various virtualization technologies.</p>
+          <div class="project-features">
+            <div class="feature-item">OPNsense Firewall with multiple VLANs to segment different network zones</div>
+            <div class="feature-item">AdGuard Home for DNS resolution with ad blocking and privacy protection</div>
+            <div class="feature-item">Proxmox VE for virtualization and resource management</div>
+            <div class="feature-item">VLAN configuration for network isolation (VLAN 99 for virtualization, VLAN 50 for user devices)</div>
+            <div class="feature-item">Robust firewall rules to control traffic between VLANs</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">OPNsense</span>
+            <span class="tag">pfSense</span>
+            <span class="tag">Network Security</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">Proxmox</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Documentation</a>
+            <a href="#" target="_blank">Network Diagram</a>
+          </div>
+        </div>
+
+        <!-- HashChecker Security Tool -->
+        <div class="project-card">
+          <h3 class="project-title">HashChecker Security Tool</h3>
+          <p class="project-description">A security utility that uses the VirusTotal API to scan file hashes for malware detection and forwards results to a Google Gemini API for advanced threat analysis.</p>
+          <div class="project-features">
+            <div class="feature-item">Integration with VirusTotal API for comprehensive hash scanning</div>
+            <div class="feature-item">AI-powered analysis of scan results for enhanced threat detection</div>
+            <div class="feature-item">Detailed reporting of potential security threats</div>
+            <div class="feature-item">Command-line interface for easy integration into security workflows</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">API Integration</span>
+            <span class="tag">Cybersecurity</span>
+            <span class="tag">Threat Intelligence</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Documentation</a>
+          </div>
+        </div>
+
+        <!-- Secure Mail Server Infrastructure -->
+        <div class="project-card">
+          <h3 class="project-title">Secure Mail Server Infrastructure</h3>
+          <p class="project-description">A privacy-focused mail server built with Postfix, Dovecot, and comprehensive security tools to ensure email privacy and protection against threats.</p>
+          <div class="project-features">
+            <div class="feature-item">Postfix configuration for reliable mail transfer</div>
+            <div class="feature-item">Dovecot implementation for secure IMAP and POP3 services</div>
+            <div class="feature-item">Integration of Amavisd-new, SpamAssassin, and ClamAV for email filtering and antivirus protection</div>
+            <div class="feature-item">SPF, DKIM, and DMARC implementation for email authentication</div>
+            <div class="feature-item">End-to-end encryption options for maximum privacy</div>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Email Security</span>
+            <span class="tag">Postfix</span>
+            <span class="tag">Dovecot</span>
+            <span class="tag">Linux</span>
+            <span class="tag">System Administration</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank">Documentation</a>
+            <a href="#" target="_blank">Architecture Diagram</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section fade-in">
+      <h2 class="terminal-line">~/about</h2>
+      <div class="about-content">
+        <p>I'm <span class="highlight-text">Shubham Raturi</span>, a B.Tech Cybersecurity student navigating the digital frontier with a strong passion for networks and system security.</p>
+        <p>My technical journey focuses on building secure systems, implementing robust network architectures, and developing privacy-focused solutions in a world where data is increasingly valuable and vulnerable.</p>
+        <p>Core skills:</p>
+        <ul>
+          <li>Network Security & Firewall Configuration</li>
+          <li>System Infiltration & Hardening (Linux/Unix)</li>
+          <li>Virtualization & Cloud Infrastructure</li>
+          <li>Secure Communication Protocols</li>
+          <li>VLAN Implementation & Network Segmentation</li>
+        </ul>
+        <p>When I'm not securing networks or building homelab infrastructure, I explore emerging cybersecurity technologies and contribute to open-source security projects that challenge the status quo.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <h2 class="terminal-line">~/skills</h2>
+      <div class="skills-container">
+        <div class="skills-category">
+          <h3 class="highlight-text">Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">Network Security</span>
+            <span class="tag">Penetration Testing</span>
+            <span class="tag">Vulnerability Assessment</span>
+            <span class="tag">Linux Administration</span>
+            <span class="tag">Firewall Configuration</span>
+            <span class="tag">VLAN Implementation</span>
+            <span class="tag">Cloud Security</span>
+            <span class="tag">Virtualization</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="highlight-text">Tools & Technologies</h3>
+          <div class="skill-tags">
+            <span class="tag">Nmap</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">Metasploit</span>
+            <span class="tag">Burp Suite</span>
+            <span class="tag">OPNsense</span>
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Proxmox</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <h3 class="highlight-text">Programming & Scripting</h3>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section fade-in">
+      <h2 class="terminal-line">~/certifications</h2>
+      <div class="certifications-container">
+        <div class="certification-card">
+          <h3 class="certification-title">CompTIA Security+ (PURSUING)</h3>
+          <p class="certification-date">Issued: N/A</p>
+          <p class="certification-description">Industry-standard certification validating baseline cybersecurity skills and knowledge.</p>
+          <div class="certification-id">ID: N/A</div>
+        </div>
+
+        <div class="certification-card">
+          <h3 class="certification-title">Certified Ethical Hacker (CEH)(LEARNING)</h3>
+          <p class="certification-date">Issued: N/A</p>
+          <p class="certification-description">Demonstrates knowledge of attack vectors, penetration testing, and security assessment.</p>
+          <div class="certification-id">ID: N/A</div>
+        </div>
+
+        <div class="certification-card">
+          <h3 class="certification-title">Cisco Certified Network Associate (CCNA)(STUDYING)</h3>
+          <p class="certification-date">Issued: November 2023</p>
+          <p class="certification-description">Validates ability to install, configure, and operate LAN, WAN, and wireless networks.</p>
+          <div class="certification-id">ID: N/A</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section fade-in">
+      <h2 class="terminal-line">~/education</h2>
+      <div class="education-container">
+        <div class="education-card">
+          <h3 class="education-title">B.Tech in Cybersecurity</h3>
+          <p class="education-institution">Southern Alberta Institute of Technology</p>
+          <p class="education-date">2021 - Present</p>
+          <div class="education-details">
+            <div class="feature-item">Relevant Coursework: Network Security, Cryptography, Secure Coding, Digital Forensics</div>
+            <div class="feature-item">Research Project: Implementation of Zero Trust Architecture in SME Networks</div>
+            <div class="feature-item">GPA: 3.8/4.0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tryhackme" class="section fade-in">
+      <h2 class="terminal-line">~/tryhackme_profile</h2>
+      <div class="tryhackme-container">
+        <div class="tryhackme-header">
+          <h3 class="highlight-text">TryHackMe Profile</h3>
+          <p>Username: <span class="highlight-text">albedo02</span></p>
+          <p>Rank: <span class="highlight-text">Top 9%</span></p>
+          <p>Points: <span class="highlight-text">0x8</span></p>
+        </div>
+
+        <div class="tryhackme-badges">
+          <h4>Completed Paths:</h4>
+          <div class="skill-tags">
+            <span class="tag">Jr Penetration Tester</span>
+          </div>
+        </div>
+
+        <div class="tryhackme-stats">
+          <h4>Notable Achievements:</h4>
+          <div class="feature-item">Completed 50+ rooms</div>
+          <div class="feature-item">Solved 30+ King of the Hill challenges</div>
+          <div class="feature-item">Participated in 15+ Capture The Flag events</div>
+        </div>
+
+        <div class="project-links">
+          <a href="https://tryhackme.com/p/albedo02" target="_blank">View TryHackMe Profile</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="section fade-in">
+      <h2 class="terminal-line">~/contact</h2>
+      <p>Establish a secure connection through any of these channels:</p>
+      <ul>
+        <li>Secure Email: <a href="mailto:ruinous.crates_0p@icloud.com">ruinous.crates_0p@icloud.com</a></li>
+        <li>GitHub Repository: <a href="https://github.com/AlbedoAi" target="_blank">github.com/AlbedoAi</a></li>
+        <li>Professional Network: <a href="https://www.linkedin.com/in/shubham-raturi-797229288/" target="_blank">linkedin.com/in/shubham-raturi-797229288/</a></li>
+      </ul>
+    </section>
+
+    <div class="terminal-input-container">
+        <div class="terminal-input-label">COMMAND_INTERFACE</div>
+        <div class="terminal-input">
+          <input type="text" id="terminal-command" placeholder="Type 'help' for commands..." autocomplete="off">
+        </div>
+    </div>
+    <footer>
+      <p>© 2025 Shubham Raturi • Cybersecurity Specialist</p>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

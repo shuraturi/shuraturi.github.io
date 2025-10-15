@@ -1,2 +1,1 @@
-# shuraturi.github.io
-My Portfolio Website
+# albedoai.github.io
